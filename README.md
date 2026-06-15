@@ -1,61 +1,86 @@
-# Proyecto Final — Sprint 9
-## Urban Scooter
-### Axel Van Dyck, Sprint 9. Grupo 14
-
-Este sprint se enfocó en las siguientes tareas y actividades clave para asegurar la calidad y funcionalidad del sistema:
-
-## Tareas Principales
- 
-1. En este proyecto, realizamos un cuestionario de evaluación general sobre los aspectos de pruebas en calidad de software 
-y conocimientos generales en HTTP, bases de datos, y computación técnica.
-
-2. **Análisis de Clases de Equivalencia y Casos de Prueba**
-   - Realizamos un análisis detallado sobre el uso de clases de equivalencia y su aplicación en escenarios de prueba para el chequeo de la página y la aplicación móvil.
-   Se documentaron los casos específicos donde estas clases pueden optimizar las pruebas, reduciendo redundancias y mejorando la cobertura.
-
-3. **Artefactos y Mapeo**
-   - Se crearon artefactos como un mapa mental para el flujo del formulario de pedido. Este mapa permite visualizar cada paso y decisión dentro del proceso de pedido, facilitando la revisión y validación del flujo.
-   
-
-4. **Lista de Comprobación para Validación de Pantallas**
-   - Se desarrolló una lista de comprobación para la pantalla de "Estado del pedido", abordando tanto la interfaz de usuario como la lógica subyacente.
-   - Los casos aprobados y pendientes de corrección están documentados en esta lista, proporcionando enlaces a informes de errores en Jira.
-
-5. **Validación de Campos en Formularios de Pedido**
-   - Se diseñaron pruebas para validar los formularios de datos, evaluando límites y resultados esperados en cada campo.
-   - Las pruebas incluyeron diferentes combinaciones de datos para asegurar que los formularios respondan correctamente en casos válidos e inválidos. Los errores se documentaron en la plataforma de seguimiento.
-
-6. **Casos de Prueba para Notificaciones de Conectividad y Tiempo**
-   - Desarrollamos casos de prueba específicos para verificar las notificaciones de falta de conexión a internet y de tiempo restante.
-   - Estos casos incluían condiciones de preconfiguración y resultados esperados, con el objetivo de asegurar la funcionalidad de la aplicación incluso en condiciones de red desfavorables.
-
-7. **Revisión de Solicitudes en la API**
-   - Se validaron los puntos de entrada en la API de Urban Scooter, incluyendo la solicitud para crear un nuevo repartidor y su respectiva respuesta HTTP.
-   - Las pruebas fueron documentadas, con énfasis en respuestas válidas y la verificación de los códigos de estado.
-
-8. **Configuración y Pruebas en la Base de Datos**
-   - Se trabajó en la consola para revisar y ajustar la base de datos;
-   - Verificar aparición, actualización y eliminación de datos, asegurando la correcta configuración de tablas y relaciones de datos.
-   - Esto incluyó consultas y ajustes necesarios para el correcto funcionamiento de la API y la integración con la lógica de la aplicación.
+# Proyecto Urban Scooter — Sprint 9
+### Axel Van Dyck | Grupo 14
 
 ---
 
-## Enlaces Importantes
+## 📌 Resumen del Sprint
 
-- **Mapa Mental:** https://drive.google.com/file/d/1wahkrjnt-IygngIf2RJsbYjPd28YeE6h/view
-- **Informes de Errores:** 
+Este sprint se enfocó en la validación de calidad del sistema Urban Scooter mediante pruebas funcionales y técnicas, cubriendo diferentes capas del producto: Front-end, API y Base de Datos.
 
-- https://axelvandyck.atlassian.net/jira/software/c/projects/APIUS/list?atlOrigin=eyJpIjoiZTk1YWRjMDQzMzQ1NGVkM2E0YjI3OTUyM2U1MzFiZWQiLCJwIjoiaiJ9
-
-
-- https://axelvandyck.atlassian.net/jira/software/c/projects/USAM/list?atlOrigin=eyJpIjoiZjQ3NGI2NWYyYjk1NDE4ZGFmNmMxOWM4ZGE3NTZhM2YiLCJwIjoiaiJ9
-
-
-- https://axelvandyck.atlassian.net/issues/?jql=project+%3D+%22USDFORM%22+ORDER+BY+created+DESC&atlOrigin=eyJpIjoiNGVhNGQ0MmRmY2ZjNGRhY2FhYTA2NTllZDJkMjNmODMiLCJwIjoiaiJ9
+El objetivo principal fue asegurar la correcta funcionalidad del flujo de pedidos, la integridad de los datos y la estabilidad de los servicios expuestos por la aplicación.
 
 ---
 
-## Próximos Pasos
+## 🧪 Test Coverage Scope
 
-- Continuar con la revisión y solución de los errores detectados.
+Durante el sprint se realizaron actividades de validación en múltiples niveles del sistema, incluyendo pruebas funcionales, validación de servicios y verificación de datos.
+
 ---
+
+### 🎨 Front-end Testing
+
+- Validación de formularios de creación de pedidos
+- Análisis de límites y comportamiento de campos (validaciones positivas y negativas)
+- Verificación de notificaciones de conectividad y tiempo restante
+- Validación del estado de la pantalla “Order Status”
+- Aplicación de técnicas de diseño de pruebas como clases de equivalencia
+- Identificación de comportamientos esperados e inesperados en la interfaz
+
+---
+
+### 🔌 API Testing
+
+- Validación de endpoints para la creación de nuevos repartidores
+- Verificación de códigos de estado HTTP en respuestas
+- Revisión de estructura y consistencia de las respuestas de la API
+- Validación de manejo de errores en solicitudes inválidas
+
+---
+
+### 🗄️ Database Validation
+
+- Verificación de inserción de datos en la base de datos
+- Validación de actualización y eliminación de registros
+- Revisión de consistencia entre API y base de datos
+- Aseguramiento de integridad de datos tras operaciones del sistema
+- Validación de relaciones entre tablas
+
+---
+
+## 🧠 Artefactos de QA
+
+- Mapa mental del flujo del formulario de pedido para análisis de procesos
+- Lista de comprobación para la pantalla “Order Status”
+- Casos de prueba documentados con trazabilidad en Jira
+- Documentación de escenarios de prueba para formularios y notificaciones
+
+### Enlace a Diagrama:
+
+https://drive.google.com/file/d/1wahkrjnt-IygngIf2RJsbYjPd28YeE6h/view?pli=1
+
+<img width="800" height="600" alt="image" src="https://github.com/user-attachments/assets/ebbefcca-13f5-4f6e-949b-3a4bdb76c5a5" />
+
+► **Demo de Informes de Errores:**
+
+
+[![Jira](https://img.shields.io/badge/API_Reports-JIRA-%230A0FFF.svg?style=for-the-badge&logo=jira&logoColor=white)](https://axelvandyck.atlassian.net/jira/software/c/projects/APIUS/list?atlOrigin=eyJpIjoiZTk1YWRjMDQzMzQ1NGVkM2E0YjI3OTUyM2U1MzFiZWQiLCJwIjoiaiJ9) 
+
+[![Jira](https://img.shields.io/badge/App_Reports-JIRA-%230A0FFF.svg?style=for-the-badge&logo=jira&logoColor=white)](https://axelvandyck.atlassian.net/jira/software/c/projects/USAM/list?atlOrigin=eyJpIjoiZjQ3NGI2NWYyYjk1NDE4ZGFmNmMxOWM4ZGE3NTZhM2YiLCJwIjoiaiJ9) 
+
+[![Jira](https://img.shields.io/badge/Form_Reports-JIRA-%230A0FFF.svg?style=for-the-badge&logo=jira&logoColor=white)](https://axelvandyck.atlassian.net/jira/software/c/projects/USDFORM/list?jql=project+%3D+USDFORM+ORDER+BY+cf%5B10019%5D+ASC&atlOrigin=eyJpIjoiZjRiZDIwMTE0MzIyNGFhNjhiMzg3YTA5ODQ3M2JiZmUiLCJwIjoiaiJ9) 
+
+---
+
+## 🎯 Enfoque de Calidad
+
+El sprint aplicó técnicas de diseño de pruebas para mejorar la cobertura y eficiencia del testing, reduciendo redundancias y asegurando una validación más estructurada del sistema.
+
+Se priorizó la validación de flujos críticos del usuario, especialmente aquellos relacionados con la creación de pedidos y la experiencia de uso en condiciones normales y de error.
+
+---
+
+## 📊 Conclusión
+
+Este sprint permitió reforzar la calidad del sistema Urban Scooter mediante la validación integral de su funcionalidad en diferentes capas.
+
+La combinación de pruebas Front-end, API y Base de Datos aseguró una visión completa del comportamiento del sistema, contribuyendo a la detección temprana de inconsistencias y a una mejor comprensión del flujo de datos end-to-end.
